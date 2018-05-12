@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "create-react-app": "^1.5.2"
+  },
+  "name": "React-MongoDB-AppDeployed",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/BBITguru/React-MongoDB-AppDeployed.git",
+  "author": "BBITguru <jparker@bbit.guru>",
+  "license": "MIT"
+}
