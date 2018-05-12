@@ -1,11 +1,34 @@
 {
-  "dependencies": {
-    "create-react-app": "^1.5.2"
-  },
   "name": "React-MongoDB-AppDeployed",
   "version": "1.0.0",
-  "main": "index.js",
   "repository": "https://github.com/BBITguru/React-MongoDB-AppDeployed.git",
   "author": "BBITguru <jparker@bbit.guru>",
-  "license": "MIT"
+  "license": "MIT",
+  "main": "server.js",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.17.2",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "heroku": "^7.0.36",
+    "mongoose": "^5.0.17",
+    "react-bootstrap": "^0.32.1",
+    "react-dom": "^16.3.2",
+    "react-router-dom": "^4.2.2"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "create-react-app": "^1.5.2",
+    "nodemon": "^1.11.0"
+  },
+  "scripts": {
+    "server": "node server.js",
+    "client": "node scripts/start-client.js",
+    "start": "node server.js",
+    "dev": "./node_modules/.bin/concurrently \"./node_modules/.bin/nodemon\" \"npm run client\"",
+    "build": "cd client && npm run build",
+    "seed": "node scripts/seedDB.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "installDeps": "yarn && cd client && yarn"
+  }
 }
